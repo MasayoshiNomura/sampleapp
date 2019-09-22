@@ -21,5 +21,24 @@
  */
 
 return array(
+    // MySQL ドライバの設定
+    'development' => array(
+        'type'           => 'mysqli',
+        'connection'     => array(
+            'hostname'       => 'mysql',
+            'port'           => '3306',
+            'database'       => 'default',
+            'username'       => 'default',
+            'password'       => 'secret',
+            'persistent'     => false,
+            'compress'       => false,
+        ),
+        'identifier'     => '`',
+        'table_prefix'   => '',
+        'charset'        => 'utf8',
+        'enable_cache'   => true,
+        'profiling'      => false,
+        'readonly'       => false,
+    ),
 
 );
